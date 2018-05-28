@@ -4,6 +4,7 @@
 <head>
   <link rel="stylesheet" src="//normalize-css.googlecode.com/svn/trunk/normalize.css" />
   <link rel="stylesheet" href="css/styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Restaurant Reviews</title>
 </head>
 
@@ -15,18 +16,20 @@
   </header>
 
   <main id="maincontent">
-    <section id="map-container">
-      <div tabindex="-1" id="map"></div>
+    <section tabindex="-1" id="map-container">
+      <div id="map"></div>
     </section>
     <section>
       <div class="filter-options">
         <h2>Filter Results</h2>
-        <select tabindex="1" id="neighborhoods-select" name="neighborhoods" onchange="updateRestaurants()">
-          <option value="all">All Neighborhoods</option>
-        </select>
-        <select tabindex="1" id="cuisines-select" name="cuisines" onchange="updateRestaurants()">
-          <option value="all">All Cuisines</option>
-        </select>
+        <div id='filter'>
+          <select tabindex="1" id="neighborhoods-select" name="neighborhoods" onchange="updateRestaurants()">
+            <option value="all">All Neighborhoods</option>
+          </select>
+          <select tabindex="1" id="cuisines-select" name="cuisines" onchange="updateRestaurants()">
+            <option value="all">All Cuisines</option>
+          </select>
+        </div>
       </div>
       <ul tabindex="1" id="restaurants-list"></ul>
     </section>
