@@ -278,7 +278,7 @@ nav h1 a {
   overflow: hidden;
   padding: 0 20px 20px;
   position: relative;
-  width: 85%;
+  width: 80%;
 }
 #reviews-list li p {
   margin: 0 0 10px;
@@ -302,27 +302,27 @@ nav h1 a {
   #restaurants-list li {
     width: 35%;
   }
-  .inside #footer {
-    position: absolute;
-  }
   /*restaurant details page*/
   #breadcrumb {
-    width: calc(40% - 80px);
+    width: calc(50% - 80px);
+  }
+  ul li {
+    font-size: 1em;
   }
   #restaurant-container, #reviews-container {
-    width: 40%;
+    width: 50%;
   }
   .inside #map-container {
-    width: 60%;
-  }
-  #reviews-list li {
-    width: 85%;
+    width: 50%;
   }
 };
 
-@media only screen and (min-width: 1200px) {
+/* @media only screen and (min-width: 1200px) {
   #restaurants-list li {
     width: 25%;
   }
-  /* restaurant details page */
-};
+  .inside #footer {
+    position: absolute;
+  }
+  
+}; */
