@@ -157,8 +157,11 @@ createRestaurantHTML = (restaurant, index) => {
 
   const more = document.createElement('a');
   more.innerHTML = 'View Details';
-  more.tabIndex = index + 4;
+  more.setAttribute("role", "button");
+  more.setAttribute("aria-labelledby", "view more details")
+  more.tabIndex = index + 3;
   more.href = DBHelper.urlForRestaurant(restaurant);
+  image.setAttribute("alt", "image of " + restaurant.name)
   li.append(more)
 
   return li

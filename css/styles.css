@@ -35,6 +35,10 @@ h1, h2, h3, h4, h5, h6 {
 article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+textarea:focus {
+  border: solid 1px blue
+}
+
 #maincontent {
   background-color: #f3f3f3;
   min-height: 100%;
@@ -317,12 +321,11 @@ nav h1 a {
   }
 };
 
-/* @media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1200px) {
   #restaurants-list li {
     width: 25%;
   }
   .inside #footer {
     position: absolute;
   }
-  
-}; */
+};

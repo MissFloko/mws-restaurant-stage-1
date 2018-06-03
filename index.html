@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <link rel="stylesheet" src="//normalize-css.googlecode.com/svn/trunk/normalize.css" />
@@ -23,15 +23,15 @@
       <div class="filter-options">
         <h2>Filter Results</h2>
         <div id='filter'>
-          <select tabindex="1" id="neighborhoods-select" name="neighborhoods" onchange="updateRestaurants()">
+          <select tabindex="1" id="neighborhoods-select" name="neighborhoods" onchange="updateRestaurants()" aria-label="choose your neighborhood.">
             <option value="all">All Neighborhoods</option>
           </select>
-          <select tabindex="1" id="cuisines-select" name="cuisines" onchange="updateRestaurants()">
+          <select tabindex="1" id="cuisines-select" name="cuisines" onchange="updateRestaurants()" aria-label="choose your cuisine.">
             <option value="all">All Cuisines</option>
           </select>
         </div>
       </div>
-      <ul tabindex="1" id="restaurants-list"></ul>
+      <ul id="restaurants-list"></ul>
     </section>
   </main>
 
