@@ -180,3 +180,11 @@ addMarkersToMap = (restaurants = self.restaurants) => {
     self.markers.push(marker);
   });
 }
+
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('/js/sw.js').then((reg) => {
+    console.log('Service worker is live!', reg);
+}).catch((err) => {
+    console.log('Could not load service worker.', err);
+});
+}
