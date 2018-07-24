@@ -19,7 +19,7 @@ ul, li {
 }
 a {
 	color: orange;
-	text-decoration: none;
+  text-decoration: none;
 }
 a:hover, a:focus {
 	color: #3397db;
@@ -83,6 +83,7 @@ nav h1 a {
 /* Display list items side by side */
 #breadcrumb li {
     display: inline;
+    margin-left: 10px;
 }
 
 /* Add a slash symbol (/) before/behind each list item */
